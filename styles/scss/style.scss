@@ -4,6 +4,7 @@
 html,
 body {
   height: 100%;
+  //overflow: hidden;
 }
 
 body {
@@ -18,6 +19,7 @@ body {
 .navigation__list {
 	display: flex;
 	justify-content: space-around;
+    //flex-flow: wrap;
 
 }
 
@@ -35,6 +37,19 @@ body {
    transition: all 0.5s linear;
 }
 
+//PAGE ABOUT ME
+
+.main__navigation-fullscreen {
+  width: 100%;
+  position: fixed;
+  background-color: rgba(185, 119, 101, 0.4);
+}
+.navigation__list-fullscreen {
+  width: 40%;
+  margin: 0 auto;
+  padding: 1.5%;
+}
+//PAGE ABOUT ME
 
 .header__wrap {
 	margin:0 auto;
@@ -190,3 +205,34 @@ figure {
 	background-image: url('../../img/img6.jpg');
 }
 
+.about__background1 {
+  height: 150vh;
+  background-image: url('../../img/john-towner-125995-unsplash.jpg');
+  background-size: cover;
+}
+
+.parallax-window {
+  min-height: 110vh;
+  background: transparent;
+}
+
+.about-information {
+  padding: 20px 0;
+  background-color:#fff ;
+}
+.about-information__items {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about-information__image1 {
+  width: 30%;
+  img {
+    width: 100%;
+  }
+}
+.about-information__text {
+  font-size: 30px;
+}
